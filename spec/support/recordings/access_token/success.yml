@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://datamarket.accesscontrol.windows.net/v2/OAuth2-13
+    body:
+      encoding: UTF-8
+      string: scope=http%3A%2F%2Fapi.microsofttranslator.com&grant_type=client_credentials&client_id=tt-v2-d&client_secret=nByOzOS8kXvM8HB5AtDDsHRQwaDXGayOyPCzTbD44VQ%3D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Request-Id:
+      - 11595de4-7036-4d9a-8b4e-8d43b2fc1b82
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Date:
+      - Thu, 12 Feb 2015 19:25:54 GMT
+      Content-Length:
+      - '594'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"http://schemas.xmlsoap.org/ws/2009/11/swt-token-profile-1.0","access_token":"http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=tt-v2-d&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1423769755&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=wvnHv2A0U0KIec8YM4chkMQIdp9BIzbXyVG6qEDV9RA%3d","expires_in":"599","scope":"http://api.microsofttranslator.com"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 19:25:55 GMT
+recorded_with: VCR 2.9.2

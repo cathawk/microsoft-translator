@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.microsofttranslator.com/v2/Http.svc/Detect?text=This%20is%20a%20test.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=tt-v2-d&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1423774629&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=LL4cuSAvQp1RMsFZqvgkFrVX4kNWXoIMNL4jdDIE1Js%3d
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=604800
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/xml; charset=utf-8
+      Expires:
+      - Thu, 19 Feb 2015 20:47:09 GMT
+      Last-Modified:
+      - Thu, 12 Feb 2015 20:47:09 GMT
+      Etag:
+      - ED1D275C2/12/2015 12:47:09 PM
+      X-Ms-Trans-Info:
+      - 3427.V2_Rest.Detect.2010210A
+      Date:
+      - Thu, 12 Feb 2015 20:47:08 GMT
+    body:
+      encoding: UTF-8
+      string: <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">en</string>
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 20:47:09 GMT
+recorded_with: VCR 2.9.2

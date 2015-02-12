@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://datamarket.accesscontrol.windows.net/v2/OAuth2-13
+    body:
+      encoding: UTF-8
+      string: scope=http%3A%2F%2Fapi.microsofttranslator.com&grant_type=client_credentials&client_id=not-an-id&client_secret=nByOzOS8kXvM8HB5AtDDsHRQwaDXGayOyPCzTbD44VQ%3D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ms-Request-Id:
+      - 01e10ecc-5e25-4d65-9fcc-454859e68a83
+      Request-Id:
+      - 01e10ecc-5e25-4d65-9fcc-454859e68a83
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Date:
+      - Thu, 12 Feb 2015 19:16:17 GMT
+      Content-Length:
+      - '222'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_client","error_description":"ACS50012: Authentication
+        failed.\r\nTrace ID: 01e10ecc-5e25-4d65-9fcc-454859e68a83\r\nCorrelation ID:
+        4daded71-34de-40b4-8889-f0d60d3bf95a\r\nTimestamp: 2015-02-12 19:16:17Z"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 19:16:17 GMT
+recorded_with: VCR 2.9.2

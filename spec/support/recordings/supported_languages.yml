@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.microsofttranslator.com/v2/Http.svc/GetLanguagesForTranslate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=tt-v2-d&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1423774917&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=HLPxMI42tameYLmMVC4iKrS2D4XCbDpYVM0DAp7kB%2fA%3d
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1020'
+      Content-Type:
+      - application/xml; charset=utf-8
+      X-Ms-Trans-Info:
+      - 3541.V2_Rest.GetLanguagesForTranslate.2033E875
+      Date:
+      - Thu, 12 Feb 2015 20:51:58 GMT
+    body:
+      encoding: UTF-8
+      string: <ArrayOfstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><string>ar</string><string>bg</string><string>ca</string><string>zh-CHS</string><string>zh-CHT</string><string>cs</string><string>da</string><string>nl</string><string>en</string><string>et</string><string>fi</string><string>fr</string><string>de</string><string>el</string><string>ht</string><string>he</string><string>hi</string><string>mww</string><string>hu</string><string>id</string><string>it</string><string>ja</string><string>tlh</string><string>tlh-Qaak</string><string>ko</string><string>lv</string><string>lt</string><string>ms</string><string>mt</string><string>no</string><string>fa</string><string>pl</string><string>pt</string><string>ro</string><string>ru</string><string>sk</string><string>sl</string><string>es</string><string>sv</string><string>th</string><string>tr</string><string>uk</string><string>ur</string><string>vi</string><string>cy</string></ArrayOfstring>
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 20:51:59 GMT
+recorded_with: VCR 2.9.2

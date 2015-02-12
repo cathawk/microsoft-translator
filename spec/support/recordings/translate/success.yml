@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.microsofttranslator.com/v2/Http.svc/Translate?text=This%20is%20a%20small%20test%20string&to=fr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=tt-v2-d&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1423780125&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=Edy7VVm5piEfgoChQJixjAgS%2b3fCdLnTl%2bEmDoyH9wU%3d
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '107'
+      Content-Type:
+      - application/xml; charset=utf-8
+      X-Ms-Trans-Info:
+      - 3730.V2_Rest.Translate.20002B12
+      Date:
+      - Thu, 12 Feb 2015 22:18:44 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PHN0cmluZyB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS8y
+        MDAzLzEwL1NlcmlhbGl6YXRpb24vIj5JbCBzJ2FnaXQgZCd1bmUgcGV0aXRl
+        IGNoYcOubmU8L3N0cmluZz4=
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 22:18:45 GMT
+recorded_with: VCR 2.9.2
